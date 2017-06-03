@@ -1,0 +1,157 @@
+.box {
+	margin-right: 0 auto;
+	flex: 0 1 100%;
+	position: relative;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,.05);
+	-webkit-font-smoothing: antialiased;
+	@media (--lg) {
+		margin-bottom: 4rem;
+	}
+}
+
+.box {
+	@media (--lg) {
+		flex: 0 1 50%;
+	}
+}
+
+.box:nth-child(2n) {
+	@media (--lg) {
+		top: 1rem;
+	}
+}
+
+.box:nth-child(1n) .box-text {
+	background-color: #E5B282;
+}
+
+.box:nth-child(1n) .box-image {
+	background-color: #E5B282;
+}
+
+.box:nth-child(2n) .box-text {
+	background-color: #0A75AA;
+}
+
+.box:nth-child(2n) .box-image {
+	background-color: #0A75AA;
+}
+
+.box:nth-child(3n) .box-text {
+	background-color: #7722B6;
+}
+
+.box:nth-child(3n) .box-image {
+	background-color: #7722B6;
+}
+
+.box:nth-child(4n) .box-text {
+	background-color: #ec5a24;
+}
+
+.box:nth-child(4n) .box-image {
+	background-color: #ec5a24;
+}
+
+.box-text {
+	padding: 2rem;
+	@media (--lg) {
+		padding: 4rem;
+	}
+}
+
+.box-text * {
+	color: white;
+}
+
+.box-image {
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: grey;
+	background-blend-mode: multiply;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	transition: all 300ms ease;
+	z-index: 10;
+	width: 100px;
+	height: 100px;
+	@media (--md) {
+		width: 180px;
+		height: 180px;
+	}
+	@media (--lg) {
+		top: -20px;
+		right: -20px;
+		width: 250px;
+		height: 250px;
+	}
+}
+
+.box-icon-spotify {
+	fill: white;
+}
+
+.box-icon {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	margin-right: .5rem;
+	@media (--lg) {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.box-icon-releasenotes  {
+	fill: white;
+}
+
+.box p {
+	font-size: 1.15rem;
+}
+
+
+.box-link {
+	margin-right: 1rem;
+	transition: all 300ms ease;
+	padding: .5rem 1rem;
+	border-radius: 30em;
+	display: inline-block;
+	user-select: none;
+	backface-visibility: hidden;
+}
+
+.box-link:hover {
+	background-color: white;
+	transform: scale(1.05);
+}
+
+.box-link:hover .box-icon {
+	fill: #0A75AA;
+}
+
+.box-link:hover {
+	color: #0A75AA;
+}
+
+.box-link:active {
+	transform: translateY(.1rem);
+}
+
+.box-link-spotify {
+	background-color: white;
+}
+
+.box-link-spotify {
+	color: #0A75AA
+}
+
+.box-link-spotify .box-icon-spotify {
+	fill: #0A75AA;
+}
+
+.box-link-spotify:hover .box-icon-spotify {
+	fill: #1db954;
+}

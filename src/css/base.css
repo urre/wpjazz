@@ -1,0 +1,21 @@
+body {
+	background-color: #f6f6f6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 110%;
+}
+
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding: 1rem;
+	@media (--lg) {
+		max-width: 90%;
+		padding: 2rem;
+	}
+}
+
+path {
+	transition: all 300ms ease;
+}

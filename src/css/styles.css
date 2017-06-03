@@ -1,0 +1,14 @@
+@import 'aos/dist/aos.css';
+@import 'base';
+@import 'type';
+@import 'box';
+@import 'header';
+@import 'footer';
+
+@custom-media --sm (min-width: 40em);
+@custom-media --md (min-width: 50em);
+@custom-media --lg (min-width: 70em);
+
+:root {
+	--profile: #0A75AA;
+}

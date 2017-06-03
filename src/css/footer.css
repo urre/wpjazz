@@ -1,0 +1,92 @@
+.container.container-footer {
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.footer {
+	background: #f6f6f6;
+}
+
+.footer-paragraph  {
+	padding: 1rem;
+	text-align: center;
+	font-size: 1.15rem;
+	max-width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+	@media (--lg) {
+		margin-bottom: 3rem;
+		font-size: 1.35rem;
+	}
+}
+
+.footer-slogan {
+	font-size: .85rem;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+	color: #bbb;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
+.footer-cta {
+	text-align: center;
+}
+
+.footer-byline {
+	border-top: 1px solid #ccc;
+	display: flex;
+	padding: 2rem;
+	flex-direction: column;
+	@media (--lg) {
+		flex-direction: row;
+	}
+}
+
+.footer-byline-text {
+	flex: 1 1 auto;
+}
+
+.footer-byline-link {
+	color: #0A75AA;
+	margin-right: 1rem;
+}
+
+.footer-button {
+	margin: 0;
+	padding: .5rem .75rem;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	line-height: 2;
+	font-size: .85rem;
+	background: #0085ba;
+	border-color: #0073aa #006799 #006799;
+	box-shadow: 0 1px 0 #006799;
+	color: white;
+	text-decoration: none;
+	transition: all 300ms;
+	text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+	@media (--lg) {
+		padding: .75rem 1rem;
+		font-size: 1rem;
+	}
+}
+
+.footer-button:hover {
+	background: #006799;
+}
+
+.footer-button:active,
+.footer-button:focus {
+	position: relative;
+	transform: translateY(2px);
+}
+
+.footer-follow {
+	position: relative;
+	top: 3px;
+}

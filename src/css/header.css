@@ -1,0 +1,42 @@
+.container-header {
+	justify-content: space-between;
+	align-items: top;
+}
+
+.header {
+	background: white;
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.header h1 {
+	color: #666;
+	font-weight: 400;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.header h1 a {
+	color: #191919;
+}
+
+.header-intro {
+	@media (--lg) {
+		align-items: baseline;
+		display: flex;
+		flex: 0 1 50%;
+	}
+}
+
+.header-intro-paragraph {
+	@media (--lg) {
+		margin-left: 1rem;
+	}
+}
+
+.header .tweet {
+	flex: 0 1 20%;
+	text-align: right;
+	@media (--lg) {
+		flex: 0 1 50%;
+	}
+}
