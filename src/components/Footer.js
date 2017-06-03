@@ -1,7 +1,7 @@
 import React from "react";
 const Footer = () => {
 	return (
-		<footer className="footer" role="contentinfo">
+		<footer className="footer" role="contentinfo" data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
 			<p className="footer-paragraph">
 				"WordPress core developers share a love of jazz music, and
 				{" "}<a href="https://codex.wordpress.org/WordPress_Versions">
