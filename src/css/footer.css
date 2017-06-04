@@ -33,13 +33,23 @@
 	text-align: center;
 }
 
+.footer-byline-credit {
+	margin: 0;
+	text-align: center;
+	@media (--lg) {
+		text-align: right;
+	}
+}
+
 .footer-byline {
 	border-top: 1px solid #ccc;
 	display: flex;
 	padding: 2rem;
 	flex-direction: column;
+	text-align: center;
 	@media (--lg) {
 		flex-direction: row;
+		text-align: left;
 	}
 }
 

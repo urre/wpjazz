@@ -1,10 +1,19 @@
 import React from "react";
 const Footer = () => {
 	return (
-		<footer className="footer" role="contentinfo" data-aos="fade-in" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
+		<footer
+			className="footer"
+			role="contentinfo"
+			data-aos="fade-in"
+			data-aos-offset="200"
+			data-aos-easing="ease-out-cubic"
+			data-aos-delay="500"
+			data-aos-duration="1000"
+		>
 			<p className="footer-paragraph">
 				"WordPress core developers share a love of jazz music, and
-				{" "}<a href="https://codex.wordpress.org/WordPress_Versions">
+				{" "}
+				<a href="https://codex.wordpress.org/WordPress_Versions">
 					since WordPress 1.0
 				</a>
 				{" "}all major releases are named in honor of jazz musicians they
@@ -17,21 +26,27 @@ const Footer = () => {
 				<p className="footer-slogan">Code and jazz is poetry</p>
 			</div>
 			<div className="footer-byline">
-				<span className="footer-byline-text">
+
+				<p className="footer-byline-text">
 					Made with ❤ for <a href="https://jazztips.se">Jazz</a> and
 					{" "}<a href="https://wordpress.org/">WordPress</a>
-				</span>
-				<a className="footer-byline-link" href="https://urre.me">By Urban Sandén</a>
-				<div className="footer-follow">
-					<a
-						className="twitter-follow-button"
-						href="https://twitter.com/urre"
-						data-size="small"
-						data-show-count="false"
-					>
-						Follow @urre
+				</p>
+				<p className="footer-byline-credit" >
+					<a className="footer-byline-link" href="https://urre.me">
+						By Urban Sandén
 					</a>
-				</div>
+					<span className="footer-follow">
+						<a
+							className="twitter-follow-button"
+							href="https://twitter.com/urre"
+							data-size="small"
+							data-show-count="false"
+						>
+							Follow @urre
+						</a>
+					</span>
+				</p>
+
 			</div>
 		</footer>
 	);
