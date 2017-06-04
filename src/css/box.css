@@ -125,7 +125,6 @@
 
 .box-link:hover {
 	background-color: white;
-	transform: scale(1.05);
 }
 
 .box-link:hover .box-icon {
