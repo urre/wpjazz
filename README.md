@@ -8,7 +8,21 @@
 
 The Music Behind The Releases. The major WordPress releases are named in honor of jazz musicians.
 
-### Use
+### Tools
+
++ React
++ Webpack
++ ES2015
++ Babel
++ Postcss
++ Having fun with css blend modes
++ Scraper using Cheerio, Wikipedia API
++ Stylelint
++ React Icons
++ Prettier
++ Running on Surge
+
+### Get in to it
 
 Develop
 
