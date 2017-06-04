@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "babel-polyfill";
 import data from "../data/data.json";
 import FaSpotify from "react-icons/lib/fa/spotify";
 import FaWordpress from "react-icons/lib/fa/wordpress";
