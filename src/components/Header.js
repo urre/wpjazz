@@ -13,7 +13,7 @@ const Header = () => {
 				<div className="tweet">
 					<a
 						className="twitter-share-button"
-						href="https://twitter.com/intent/tweet?text=BStyles%20Friendly%20look%20and%20feel%20for%20browsersync.notify"
+						href="https://twitter.com/intent/tweet?text=WordPress%20Jazz%20-%20The%20Music%20Behind%20The%20Releases"
 						data-size="small"
 					>
 						Tweet
