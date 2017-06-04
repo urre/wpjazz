@@ -2,7 +2,6 @@ import fs from "fs";
 import request from "request";
 import cheerio from "cheerio";
 import slugify from "slugify";
-import series from "async-series";
 
 const url = "https://codex.wordpress.org/WordPress_Versions";
 const jazzgreats = [];
