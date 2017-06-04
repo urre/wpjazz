@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
 	entry: [
@@ -29,6 +30,22 @@ module.exports = {
 			files: '**/*.css',
 			failOnError: false,
 			quiet: false
+		}),
+		new WebpackPwaManifest({
+		    name: 'WordPress Jazz',
+		    short_name: 'WPJazz',
+		    description: 'The Music Behind The Releases. In honor of the jazz musicians.',
+		    background_color: '#7221AE',
+		    icons: [
+		        {
+		            src: path.resolve('src/assets/icon.png'),
+		            sizes: [96, 128, 192, 256, 384, 512]
+		        },
+		        {
+		            src: path.resolve('src/assets/icon.png'),
+		            size: '1024x1024'
+		        }
+		    ]
 		})
 	],
 	module: {

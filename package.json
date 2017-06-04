@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "deploy": "cd build && cp index.html 200.html && surge . wpjazz.info",
+    "deploy": "npm run build && cd build && cp index.html 200.html && surge . wpjazz.info",
     "scrape": "babel-node src/scraper.js"
   },
   "devDependencies": {
@@ -53,6 +53,7 @@
     "svg-inline-loader": "^0.7.1",
     "url-loader": "*",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-pwa-manifest": "^2.1.7"
   }
 }

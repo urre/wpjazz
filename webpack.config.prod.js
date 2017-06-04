@@ -5,13 +5,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const autoprefixer = require('autoprefixer')
 const postcssImport = require('postcss-import')
 const postcssUrl = require('postcss-url')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
-	devtool: 'source-map',
 	entry: ['./src/index'],
 	output: {
 		path: path.join(__dirname, 'build'),
-		filename: '[name].[chunkhash].js'
+		filename: '[name].[chunkhash].js',
+		publicPath: '/',
 	},
 	plugins: [
 		new webpack.optimize.UglifyJsPlugin({
@@ -26,6 +27,22 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: './src/index.html'
+		}),
+		new WebpackPwaManifest({
+		    name: 'WordPress Jazz',
+		    short_name: 'WPJazz',
+		    description: 'The Music Behind The Releases. In honor of the jazz musicians.',
+		    background_color: '#7221AE',
+		    icons: [
+		        {
+		            src: path.resolve('src/assets/icon.png'),
+		            sizes: [96, 128, 192, 256, 384, 512]
+		        },
+		        {
+		            src: path.resolve('src/assets/icon.png'),
+		            size: '1024x1024'
+		        }
+		    ]
 		})
 	],
 	module: {

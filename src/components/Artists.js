@@ -16,12 +16,10 @@ class Artists extends Component {
 		this.getArtists()
 	}
 	getArtists() {
-		fetch("../data/data.json")
-		.then(response => response.json())
-		.then(json => {
-			this.setState({
-				artists: json.reverse(),
-			});
+		axios.get('../data/data.json').then(res => {
+		  this.setState({
+		  	artists: res.data.reverse(),
+		  });
 		});
 	}
 	renderArtist() {
