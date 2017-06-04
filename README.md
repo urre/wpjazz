@@ -1,8 +1,8 @@
 # WordPress Jazz
 
-![](https://res.cloudinary.com/urre/image/upload/v1496566335/ttmqspgiek4wfqkcvlzj.png)
-
 > "WordPress core developers share a love of jazz music, and since WordPress 1.0 all major releases are named in honor of jazz musicians they admire.""
+
+![](https://res.cloudinary.com/urre/image/upload/v1496566335/ttmqspgiek4wfqkcvlzj.png)
 
 ### What?
 
