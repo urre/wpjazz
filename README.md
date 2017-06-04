@@ -12,15 +12,13 @@ The Music Behind The Releases. The major WordPress releases are named in honor o
 
 + React
 + Webpack
-+ ES2015
-+ Babel
++ Babel ES2015 and stage-0 preset
++ Scraper using Cheerio, Request. Wikipedia API for downloading images.
 + Postcss
 + Having fun with css blend modes
-+ Scraper using Cheerio, Wikipedia API
 + Stylelint
 + React Icons
 + Prettier
-+ Running on Surge
 
 ### Get in to it
 
