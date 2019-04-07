@@ -32,11 +32,11 @@ class Artists extends Component {
 				<div
 					className="box"
 					key={index}
-					data-aos="fade-up"
+					data-aos="fade-zoom-in"
 					data-aos-offset="-200"
-					data-aos-easing="ease-out-cubic"
-					data-aos-delay="0"
-					data-aos-duration="500"
+					data-aos-easing="ease-in-sine"
+					data-aos-duration="600"
+					data-aos-once="true"
 				>
 					<div className="box-text">
 						<h2>{artist.version}</h2>
@@ -53,15 +53,7 @@ class Artists extends Component {
 						</a>
 
 					</div>
-					<div
-						className="box-image"
-						style={artistStyle}
-						data-aos="fade-in"
-						data-aos-offset="-200"
-						data-aos-easing="ease-out-cubic"
-						data-aos-delay="200"
-						data-aos-duration="500"
-					/>
+					<div className="box-image" style={artistStyle} />
 				</div>
 			);
 		});

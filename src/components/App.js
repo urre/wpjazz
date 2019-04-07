@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Artists from "./Artists";
 import AOS from "aos";
 
-
 class App extends Component {
 	constructor(props, context) {
 		super(props, context);

@@ -34,7 +34,6 @@
 }
 
 .footer-byline-credit {
-	margin: 0;
 	text-align: center;
 	@media (--lg) {
 		text-align: right;

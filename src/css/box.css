@@ -7,6 +7,7 @@
 	@media (--lg) {
 		margin-bottom: 4rem;
 	}
+
 }
 
 .box {
@@ -58,6 +59,7 @@
 	@media (--lg) {
 		padding: 4rem;
 	}
+
 }
 
 .box-text * {
@@ -81,12 +83,14 @@
 		width: 180px;
 		height: 180px;
 	}
+
 	@media (--lg) {
 		top: -20px;
 		right: -20px;
 		width: 250px;
 		height: 250px;
 	}
+
 }
 
 .box-icon-spotify {
@@ -102,6 +106,7 @@
 		width: 30px;
 		height: 30px;
 	}
+
 }
 
 .box-icon-releasenotes  {
@@ -112,15 +117,19 @@
 	font-size: 1.15rem;
 }
 
-
 .box-link {
 	margin-right: 1rem;
+	margin-bottom: .5rem;
 	transition: all 300ms ease;
 	padding: .5rem 1rem;
 	border-radius: 30em;
 	display: inline-block;
 	user-select: none;
 	backface-visibility: hidden;
+	@media (--lg) {
+		margin-bottom: 0rem;
+	}
+
 }
 
 .box-link:hover {
@@ -154,3 +163,4 @@
 .box-link-spotify:hover .box-icon-spotify {
 	fill: #1db954;
 }
+

@@ -1,5 +1,7 @@
 # WordPress Jazz
 
+Visut [wpjazz.now.sh](https://wpjazz.now.sh/)
+
 > "WordPress core developers share a love of jazz music, and since WordPress 1.0 all major releases are named in honor of jazz musicians they admire.""
 
 ![](https://res.cloudinary.com/urre/image/upload/v1496566335/ttmqspgiek4wfqkcvlzj.png)
@@ -33,6 +35,7 @@ Run scraper to get releases
 Saves data as ``./src/data/data.json`` and images in ``./src/data/images``
 
 #### Changelog
+- 1.0.1 Moved site to Now
 - 1.0.0 New repo. New sraper, Build the website in React.
 - 0.2.0: Switched Google image search for Wikipedia
 - 0.1.4: Renamed repo to WP Jazz Releases

@@ -1,12 +1,13 @@
 {
   "name": "wpjazz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Urban Sanden",
   "description": "WordPress Jazz - The Music Behind The Releases",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "deploy": "npm run build && cd build && cp index.html 200.html && surge . wpjazz.info",
+    "deploy": "npm run build && cp ./src/data/data.json ./build/data && cd build && cp index.html 200.html && npm run now",
+    "now": "now ./build -A ../now.json && now alias && now ls --all wpjazz",
     "scrape": "babel-node src/scraper.js"
   },
   "devDependencies": {

@@ -1,0 +1,7 @@
+{
+	"name": "wpjazz",
+	"alias": "wpjazz",
+	"version": 2,
+	"regions": ["bru"],
+	"files": ["build"]
+}
