@@ -348,5 +348,15 @@
         "blog": "https://wordpress.org/news/2019/02/betty/",
         "spotify": "spotify:search:betty-carter",
         "image": "Betty-Carter.jpg"
+    },
+    {
+        "version": "5.2",
+        "link": "https://codex.wordpress.org/Version_5.2",
+        "date": "May 07, 2019",
+        "musician": "Jaco Pastorious",
+        "changelog": "https://wordpress.org/support/wordpress-version/version-5-2/",
+        "blog": "https://wordpress.org/news/2019/05/jaco/",
+        "spotify": "spotify:search:jaco-pastorius",
+        "image": "jaco-pastorius.jpg"
     }
 ]

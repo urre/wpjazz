@@ -4,10 +4,11 @@
   "author": "Urban Sanden",
   "description": "WordPress Jazz - The Music Behind The Releases",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "start": "npm run copydata && webpack-dev-server --config webpack.config.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "deploy": "npm run build && cp ./src/data/data.json ./build/data && cd build && cp index.html 200.html && npm run now",
+    "deploy": "npm run build && npm run copydata && cd build && cp index.html 200.html && npm run now",
     "now": "now ./build -A ../now.json && now alias && now ls --all wpjazz",
+    "copydata": "cp ./src/data/data.json ./build/data",
     "scrape": "babel-node src/scraper.js"
   },
   "devDependencies": {
